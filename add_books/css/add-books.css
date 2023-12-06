@@ -1,0 +1,99 @@
+/* General css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background: url(../images/landing.jpg);
+    background-size: cover;
+}
+
+:root {
+    --maincolor: #f44336;
+    --subcolor: #222;
+}
+
+p.error {
+    display: block;
+    background-color: #ff000050;
+    margin: 10px auto;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* upload form */
+.form-add-books{
+    
+}
+.form-add-books form{
+    margin: 70px auto;
+    width: -moz-fit-content;
+    background-color: var(--subcolor);
+    width: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--subcolor);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    color: #fff;
+}
+.form-add-books form h2{
+    color: #fff;
+}
+.form-add-books form input ,
+select{
+    width: 400px;
+    margin: 20px;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid var(--subcolor);
+    caret-color: var(--subcolor);
+}
+.form-add-books form input::placeholder{
+    color: #777;
+}
+
+.form-add-books form input:focus{
+    outline: none;
+}
+.form-add-books form .submit{
+    border: none;
+    color: var(--subcolor);
+    background-color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+}
+.form-add-books form .submit:hover{
+    background-color: var(--maincolor);
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #fff;
+    border: 0;
+    outline: 0;
+    color: var(--subcolor);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
